@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teslo_update_app/config/const/environment.dart';
 
-void main() {
+void main() async {
+  await Environment.initEnvironment();
+
+  print(Environment.apiUrl);
+
   runApp(const MyApp());
 }
 
